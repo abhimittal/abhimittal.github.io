@@ -1,0 +1,25 @@
+<h1 style="text-align:center;">Welcome To My Website</h1>
+<div>
+<mat-card class="a" style="width:50%;margin:10px auto;">
+  <mat-card-title>LOGIN</mat-card-title>
+  <mat-form-field appearance="legacy" style="width:80%;align:center;">
+  <input matInput type="text" [(ngModel)]="a" placeholder="Username" required>
+</mat-form-field >
+<br>
+  <mat-form-field appearance="legacy" style="width:80%;">
+    <input matInput type="password" [(ngModel)]="b" placeholder="password" required>
+  </mat-form-field>
+<br>
+<a routerLink="/welcome"><button mat-raised-button (click)="fun()" >SignIn</button></a>
+
+
+<a routerLink="/sign-up"><button mat-raised-button >SignUp</button></a>
+<br>
+  <mat-card-footer style="text-align:center;">All Right Reserved*</mat-card-footer>
+  <br>
+</mat-card>
+</div>
+<h1>{{a}} {{b}}</h1>
+<tr *ngFor="let s of e">
+      <td>{{s.source.name}}</td>
+  </tr>
